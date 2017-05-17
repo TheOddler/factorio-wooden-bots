@@ -1,0 +1,11 @@
+{
+    "name": "wooden-bots",
+    "version": "0.0.1",
+    "title": "Wooden Bots",
+    "author": "TheOddler",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.15",
+    "dependencies": ["base >= 0.15"],
+    "description": "Adds crappy wooden bots for early game blue-prints."
+}
