@@ -12,11 +12,16 @@ armor.resistances =
 {
 	{
 		type = "physical",
-		decrease = 2,
-		percent = 10
+		decrease = 4,
+		percent = 30
 	},
+	{
+		type = "acid",
+		decrease = 6,
+		percent = 30
+	}
 }
-armor.durability = 1000
+armor.durability = 4000
 armor.equipment_grid = "wooden-equipment-grid"
 armor.inventory_size_bonus = 0
 
@@ -85,37 +90,21 @@ local roboport_equipment = table.deepcopy(data.raw["roboport-equipment"]["person
 roboport_equipment.name = "wooden-roboport-equipment"
 roboport_equipment.take_result = "wooden-roboport-equipment"
 roboport_equipment.sprite.filename = "__wooden-bots__/graphics/equipment/wooden-roboport-equipment.png"
-roboport_equipment.energy_source =
-{
-	type = "electric",
-	buffer_capacity = "35KJ",
-	input_flow_limit = "5KW",
-	usage_priority = "secondary-input"
-}
-roboport_equipment.charging_energy = "1kW"
-roboport_equipment.energy_consumption = "100W"
+roboport_equipment.energy_source.buffer_capacity = "15MJ"
+roboport_equipment.energy_source.input_flow_limit = "1500KW"
+roboport_equipment.charging_energy = "500kW"
+roboport_equipment.energy_consumption = "10kW"
 roboport_equipment.robot_limit = 5
-roboport_equipment.construction_radius = 10
+roboport_equipment.construction_radius = 7
 
 
 local reactor_equipment = table.deepcopy(data.raw["generator-equipment"]["fusion-reactor-equipment"])
 reactor_equipment.name = "wooden-reactor-equipment"
 reactor_equipment.take_result = "wooden-reactor-equipment"
 reactor_equipment.sprite.filename = "__wooden-bots__/graphics/equipment/wooden-reactor-equipment.png"
-reactor_equipment.sprite.width = 128
-reactor_equipment.sprite.height = 128
-reactor_equipment.shape =
-{
-	width = 2,
-	height = 2,
-	type = "full"
-}
-reactor_equipment.energy_source =
-{
-	type = "electric",
-	usage_priority = "primary-output"
-}
-reactor_equipment.power = "750W"
+reactor_equipment.shape.width = 2
+reactor_equipment.shape.height = 2
+reactor_equipment.power = "300kW"
 
 
 

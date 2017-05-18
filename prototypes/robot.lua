@@ -50,13 +50,13 @@ technology.order = "a-f-a"
 
 local robot = table.deepcopy(data.raw["construction-robot"]["construction-robot"])
 robot.name = "wooden-construction-robot"
-robot.resistances = { { type = "fire", percent = 20 } }
-robot.speed = 0.1
-robot.max_energy = "1.5kJ"
-robot.energy_per_tick = "0.05J"
-robot.speed_multiplier_when_out_of_energy = 0.6
-robot.energy_per_move = "10J"
-robot.working_light = {intensity = 0.8, size = 3, color = {r = 0.5, g = 0.8, b = 0.5}}
+robot.resistances = { }
+robot.speed = 0.05
+robot.max_energy = "0.5MJ"
+robot.energy_per_tick = "0.03kJ"
+robot.speed_multiplier_when_out_of_energy = 0.5
+robot.energy_per_move = "3kJ"
+robot.working_light = {intensity = 0.8, size = 3, color = {r = 0.4, g = 0.8, b = 0.4}}
 robot.idle.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"
 robot.in_motion.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"
 
