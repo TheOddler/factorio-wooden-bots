@@ -78,6 +78,6 @@ data:extend(
 {
 	equipment_grid, armor, 
 	roboport_item, 
-	armor_recipe, reactor_recipe, roboport_recipe,
-	roboport_equipment, reactor_equipment
+	armor_recipe, roboport_recipe,
+	roboport_equipment
 })
