@@ -17,33 +17,6 @@ recipe.ingredients =
 recipe.result = "wooden-construction-robot"
 
 
-local technology = table.deepcopy(data.raw.technology["construction-robotics"])
-technology.name = "wooden-construction-robotics"
-technology.effects =
-{
-	{
-		type = "unlock-recipe",
-		recipe = "wooden-construction-robot"
-	},
-	{
-		type = "unlock-recipe",
-		recipe = "wooden-modular-armor"
-	},
-	{
-		type = "unlock-recipe",
-		recipe = "wooden-roboport-equipment"
-	}
-}
-technology.prerequisites = {"engine", "heavy-armor"}
-technology.unit =
-{
-	count = 100,
-	ingredients = {{"science-pack-1", 1}},
-	time = 15
-}
-technology.order = "a-f-a"
-
-
 local robot = table.deepcopy(data.raw["construction-robot"]["construction-robot"])
 robot.name = "wooden-construction-robot"
 robot.minable.result = "wooden-construction-robot"
@@ -57,4 +30,4 @@ robot.working_light = {intensity = 0.8, size = 3, color = {r = 0.4, g = 0.8, b =
 robot.idle.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"
 robot.in_motion.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"
 
-data:extend({item, recipe, technology, robot})
+data:extend({item, recipe, robot})

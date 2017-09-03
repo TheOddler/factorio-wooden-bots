@@ -2,6 +2,8 @@ require("prototypes.robot")
 
 require("prototypes.equipment")
 
+require("prototypes.technology")
+
 --[[
 function tprint (tbl, indent)
 	if not indent then indent = 0 end
