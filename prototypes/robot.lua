@@ -27,10 +27,6 @@ technology.effects =
 	},
 	{
 		type = "unlock-recipe",
-		recipe = "wooden-reactor-equipment"
-	},
-	{
-		type = "unlock-recipe",
 		recipe = "wooden-modular-armor"
 	},
 	{
@@ -54,7 +50,7 @@ robot.minable.result = "wooden-construction-robot"
 robot.resistances = { }
 robot.speed = 0.05
 robot.max_energy = "0.1MJ"
-robot.energy_per_tick = "0.02kJ"
+robot.energy_per_tick = "-1kJ"
 robot.speed_multiplier_when_out_of_energy = 0.3
 robot.energy_per_move = "2kJ"
 robot.working_light = {intensity = 0.8, size = 3, color = {r = 0.4, g = 0.8, b = 0.4}}
