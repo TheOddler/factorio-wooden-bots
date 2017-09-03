@@ -48,11 +48,11 @@ local robot = table.deepcopy(data.raw["construction-robot"]["construction-robot"
 robot.name = "wooden-construction-robot"
 robot.minable.result = "wooden-construction-robot"
 robot.resistances = { }
-robot.speed = 0.05
-robot.max_energy = "0.1MJ"
-robot.energy_per_tick = "-1kJ"
-robot.speed_multiplier_when_out_of_energy = 0.3
-robot.energy_per_move = "2kJ"
+robot.speed = 0.03
+robot.max_energy = "0kJ"
+robot.energy_per_tick = "0kJ" --60 times per second
+robot.speed_multiplier_when_out_of_energy = 1 --they don't have energy
+robot.energy_per_move = "0kJ"
 robot.working_light = {intensity = 0.8, size = 3, color = {r = 0.4, g = 0.8, b = 0.4}}
 robot.idle.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"
 robot.in_motion.filename = "__wooden-bots__/graphics/entity/wooden-construction-robot/wooden-construction-robot.png"

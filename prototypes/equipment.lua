@@ -67,10 +67,10 @@ local roboport_equipment = table.deepcopy(data.raw["roboport-equipment"]["person
 roboport_equipment.name = "wooden-roboport-equipment"
 roboport_equipment.take_result = "wooden-roboport-equipment"
 roboport_equipment.sprite.filename = "__wooden-bots__/graphics/equipment/wooden-roboport-equipment.png"
-roboport_equipment.energy_source.buffer_capacity = "5MJ"
-roboport_equipment.energy_source.input_flow_limit = "500KW"
-roboport_equipment.charging_energy = "150kW"
-roboport_equipment.energy_consumption = "-50kW"
+roboport_equipment.energy_source.buffer_capacity = "0kJ"
+roboport_equipment.energy_source.input_flow_limit = "0kW"
+roboport_equipment.charging_energy = "0kW" --speed of charging the docket robots
+roboport_equipment.energy_consumption = "0kW"
 roboport_equipment.robot_limit = 5
 roboport_equipment.construction_radius = 7
 
