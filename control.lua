@@ -1,7 +1,7 @@
 
 function on_robot_built(event)
 	if event.robot.name == "wooden-construction-robot" then
-		event.robot.die()
+		event.robot.destroy()
 	end
 end
 
