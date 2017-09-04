@@ -15,7 +15,7 @@ technology.effects =
 		recipe = "wooden-roboport-equipment"
 	}
 }
-technology.prerequisites = {"engine", "heavy-armor"}
+technology.prerequisites = {"heavy-armor"}
 technology.unit =
 {
 	count = 100,

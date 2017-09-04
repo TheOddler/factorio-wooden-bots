@@ -1,8 +1,8 @@
 
 local equipment_grid = table.deepcopy(data.raw["equipment-grid"]["small-equipment-grid"])
 equipment_grid.name = "wooden-equipment-grid"
-equipment_grid.width = 4
-equipment_grid.height = 4
+equipment_grid.width = 3
+equipment_grid.height = 6
 
 
 local armor = table.deepcopy(data.raw.armor["modular-armor"])
@@ -73,6 +73,8 @@ roboport_equipment.charging_energy = "0kW" --speed of charging the docket robots
 roboport_equipment.energy_consumption = "0kW"
 roboport_equipment.robot_limit = 5
 roboport_equipment.construction_radius = 7
+roboport_equipment.shape.width = 3
+roboport_equipment.shape.height = 2
 
 data:extend(
 {
