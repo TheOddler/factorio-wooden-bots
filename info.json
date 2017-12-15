@@ -1,11 +1,11 @@
 {
     "name": "wooden-bots",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "title": "Wooden Bots",
     "author": "TheOddler",
     "contact": "",
     "homepage": "",
-    "factorio_version": "0.15",
+    "factorio_version": "0.16",
     "dependencies": ["base >= 0.15"],
     "description": "Adds crappy wooden bots for early game blue-prints. They are cheap but aren't very durable, so they are destroyed after placing something. They are powered by photosynthesis so don't require any electricity."
 }
